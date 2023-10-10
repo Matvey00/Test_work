@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Локация
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Добавить локацию</h1>
+    <form method="post">
+        <input type="text" name="name" id="name" class="from-control col-md-12" placeholder="Введите локацию"><br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+    </form>
+</div>
+{% endblock %}

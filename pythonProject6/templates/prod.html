@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Имя
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Редактирование {{ post.name }}</h1>
+        <div class="col-md-12">
+            <form method="post">
+                <input type="text" value="{{ post.name }}" name="name" id="name" class="from-control col-md-12"><br>
+                <textarea name="description" id="description" class="from-control col-md-12">{{ post.description }}</textarea><br>
+                <input type="text" value="{{ post.price }}" name="price" id="price" class="from-control col-md-12"><br><br>
+                <input type="submit" class="btn btn-success" value="Обновить">
+                <a href="/prod/{{ post.id }}/del" class="btn btn-danger">Удалить</a>
+            </form>
+        </div>
+
+    </div>
+{% endblock %}

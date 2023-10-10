@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Добавить на склад</h1>
+    <form method="post">
+        <input type="text" name="name" id="name" class="from-control col-md-12" placeholder="Введите название"><br>
+        <textarea name="description" id="description" class="from-control col-md-12" placeholder="Введите описание"></textarea><br>
+        <input  type="text" name="price" id="price" class="from-control col-md-12" placeholder="Введите цену"><br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+    </form>
+</div>
+{% endblock %}
